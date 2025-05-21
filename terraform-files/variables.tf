@@ -21,3 +21,8 @@ variable "role-1" {}
 variable "role-2" {}
 variable "policy-1" {}
 variable "policy-2" {}
+variable "github_token" {
+  description = "GitHub OAuth token for Amplify to access the repository"
+  type        = string
+  sensitive   = true
+}

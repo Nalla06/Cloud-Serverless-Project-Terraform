@@ -1,9 +1,9 @@
 terraform {
   backend "s3" {
-    bucket         = "my-ews-baket6"
+    bucket         = "my-eks-bucket6"
     region         = "us-east-1"
-    key            = "terraform-files/AWS-Serverless-Project/terraform.tfstate"
-    dynamodb_table = "Lock-Files"
+    key            = "terraform-files/terraform.tfstate"
+    dynamodb_table = "terraform-locks"
     encrypt        = true
   }
   required_version = ">=0.13.0"

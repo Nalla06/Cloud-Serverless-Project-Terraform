@@ -139,7 +139,7 @@ resource "aws_api_gateway_integration_response" "get_student_integration_respons
 # Deploy the API
 resource "aws_api_gateway_deployment" "student_api_deployment" {
   rest_api_id = aws_api_gateway_rest_api.lambda_api.id
-  stage_name  = "Prod"
+  
 
   triggers = {
     redeployment = sha1(jsonencode([
@@ -164,5 +164,9 @@ resource "aws_api_gateway_deployment" "student_api_deployment" {
     create_before_destroy = true
   }
 }
-
+resource "aws_api_gateway_stage" "student_api_stage" {
+  deployment_id = aws_api_gateway_deployment.student_api_deployment.id
+  rest_api_id   = aws_api_gateway_rest_api.lambda_api.id
+  stage_name    = "Prod"
+}
 
