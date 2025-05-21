@@ -47,8 +47,8 @@ jobs:
           name: Terraform plan
           command: |
             cd ./terraform-files
-            terraform force-unlock -force 18c50a60-22fd-0cf0-ccea-00c19f272852 || true
-            terraform plan
+            terraform force-unlock -force afaa7c48-e5c9-52b7-4681-b04ac6f0fef0 || true
+            terraform plan -var-file=variables.tfvars
       - run:
           name: Terraform Apply (optional, if needed)
           command: |
