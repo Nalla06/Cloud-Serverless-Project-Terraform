@@ -1,0 +1,9 @@
+
+# ---------------------
+# Ignore Terraform directories
+**/.terraform/
+**/.terraform.lock.hcl
+**/terraform.tfstate
+**/terraform.tfstate.backup
+# Ignore provider binaries
+**/terraform-provider-aws*
