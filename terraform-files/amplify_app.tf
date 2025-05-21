@@ -1,7 +1,7 @@
 resource "aws_amplify_app" "my_amplify_app" {
   name       = var.app_name
   repository = var.app_repo
-  oauth_token = var.github_token != "" ? var.github_token : getenv("GITHUB_TOKEN")
+  oauth_token = var.github_token 
   iam_service_role_arn = aws_iam_role.iam_role_amplify.arn
 
   depends_on = [aws_api_gateway_deployment.student_api_deployment]
