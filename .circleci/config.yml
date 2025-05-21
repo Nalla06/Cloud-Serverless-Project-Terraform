@@ -44,6 +44,12 @@ jobs:
             cd ./terraform-files
             terraform init
       - run:
+          name: Terraform plan
+          command: |
+            cd ./terraform-files
+            terraform force-unlock -force 18c50a60-22fd-0cf0-ccea-00c19f272852 || true
+            terraform plan
+      - run:
           name: Terraform Apply (optional, if needed)
           command: |
             cd ./terraform-files
