@@ -54,7 +54,7 @@ The project is modular, automated, and designed for real-world cloud-native depl
 
 For a full step-by-step tutorial on how I built and deployed this serverless project using AWS and Terraform, please refer to my blog post:
 
-👉 [Read the full blog here]( https://blog.nallalakshmirajyam.click)
+👉 [Read the full blog here]( https://blog.nallalakshmirajyam.click/building-a-full-stack-serverless-web-application-on-aws-with-terraform-and-circleci)
 
 It explains the architecture, tools used, Terraform deployment, and hands-on process in detail.
 
