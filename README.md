@@ -1,96 +1,64 @@
-# Cloud-Serverless-Project - Full Stack AWS Serverless Project 🚀
+# ☁️ Cloud-Serverless-Ecommerce – Full Stack Serverless Project on AWS
 
-![AWS Infrastructure Diagram](Images/serverless.png)
+![AWS Architecture Diagram](Images/serverless.png)
 
-## Table of Contents
+## 🧾 Project Overview
 
-- [Overview](#overview)
-- [Features](#features)
-- [Folder Structure](#folder-structure)
-- [Getting Started](#getting-started)
-- [Frontend](#frontend)
-- [Backend](#backend)
-- [Deployment](#deployment)
-- [Contributing](#contributing)
-- [License](#license)
+This is a fully serverless, scalable, and cost-effective **E-commerce application** built using AWS Serverless technologies. It demonstrates a complete end-to-end integration of a React frontend with backend microservices on AWS using **Lambda, DynamoDB, API Gateway**, and **Terraform** for provisioning.
 
-## Overview
+The project is modular, automated, and designed for real-world cloud-native deployments following best practices.
 
-Awesome App is a modern, scalable, and serverless application that demonstrates the integration of frontend and backend components on AWS Serverless Services. Leverage the power of AWS Amplify, Lambda, DynamoDB, and API Gateway for a hassle-free deployment experience.
+## Images recorded while doing this project
 
-## Features
+![Circi Window 1](Images/01.Circi_window.png)
+![Image 3](Images/03.png)
+![Image 4](Images/04.png)
+![Image 5](Images/05.png)
+![Image 6](Images/06.png)
+![Image 7](Images/07.png)
+![Image 8](Images/08.png)
+![Image 9](Images/09.png)
 
-- **Serverless Deployment:** Utilize AWS Serverless Services for a scalable and cost-effective deployment.
-- **Full Stack:** Frontend (HTML, CSS, JS) and Backend (Python) seamlessly integrated.
-- **Database:** No SQL Database (DynamoDB) for efficient data storage.
+## ✨ Key Features
 
-## Folder Structure
+- 🖥️ **Frontend** built using ReactJS hosted on S3 + CloudFront
+- ⚙️ **Backend** powered by AWS Lambda with Python
+- 🔌 **API Gateway** for secure and managed API routing
+- 🧠 **Microservices Architecture**: Product, Cart, Order, Search
+- 🛡️ Authentication with **Amazon Cognito**
+- 📦 **DynamoDB** as NoSQL database for high performance
+- 🔍 **OpenSearch** for product search and indexing
+- 📬 Event-driven architecture with **SQS & EventBridge**
+- 💳 Stripe integration for real-time payment processing
+- ☁️ **Terraform** used to provision the complete infrastructure
+
+---
+
+## 🔧 Tech Stack
+
+| Category      | Technology                      |
+|---------------|----------------------------------|
+| Frontend      | ReactJS, AWS S3, CloudFront      |
+| Backend       | Python, AWS Lambda               |
+| API Gateway   | Amazon API Gateway               |
+| Authentication| Amazon Cognito                   |
+| Database      | Amazon DynamoDB                  |
+| Eventing      | Amazon EventBridge, SQS          |
+| Search        | Amazon OpenSearch                |
+| Payments      | Stripe                           |
+| IaC           | Terraform                        |
+| Monitoring    | CloudWatch, X-Ray                |
+
+---
+## 📖 Detailed Guide
+
+For a full step-by-step tutorial on how I built and deployed this serverless project using AWS and Terraform, please refer to my blog post:
+
+👉 [Read the full blog here]( https://blog.nallalakshmirajyam.click)
+
+It explains the architecture, tools used, Terraform deployment, and hands-on process in detail.
 
 
-Welcome to Project Name! A [brief description] of your project. Share its purpose, key features, and why it's awesome.
-
-## Table of Contents 📋
-
-- [Introduction](#introduction)
-- [Features](#features)
-- [Prerequisites](#prerequisites)
-- [Getting Started](#getting-started)
-  - [Frontend](#frontend)
-  - [Backend](#backend)
-- [Deployment](#deployment)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
-
-## Introduction 🌟
-
-Introduce your project in a way that excites readers. What makes it unique and valuable?
-
-## Features ✨
-
-Highlight the key features that set your project apart. Use emojis and concise language.
-
-- 🎨 Beautiful and responsive UI
-- 💡 Intelligent feature X
-- 🚀 Lightning-fast performance
-
-## Prerequisites 🛠️
-
-List any dependencies or tools users need to have before diving into your project.
 
 
-## Getting Started
 
-To get started with Awesome App, follow these simple steps:
-
-1. Clone the repository: `git clone https://github.com/AmanPathak-DevOps/Cloud-Serverless-Project.git`
-2. Navigate to the `frontend` folder and explore the frontend code.
-3. Check out the `backend` folder for the awesome backend logic.
-4. Customize and adapt the code based on your project requirements.
-5. Deploy the application using the provided deployment guides.
-
-## Frontend
-
-The `Frontend` folder contains the HTML, CSS, and JS files responsible for the user interface and client-side functionalities. Customize these files to match your application's design.
-
-## Backend
-
-The `Backend` folder houses the backend logic written in Python. This includes Lambda functions that handle server-side processing and interactions with AWS services. Modify these files to tailor the backend to your specific needs.
-
-## Deployment
-
-If you want to deploy this project using AWS Serverless Services, refer to the following:
-
-- **Manual Deployment:** Explore the detailed [blog post](#) for step-by-step instructions on manually setting up the project.
-
-- **Terraform Deployment:** For an automated infrastructure-as-code approach, check out the [Terraform repository](https://github.com/AmanPathak-DevOps/Terraform-for-AWS/blob/master/Non-Modularized/AWS-Serverless-Project/) and follow the provided instructions.
-
-## Contributing
-
-Contributions are welcome! If you have ideas for improvements, find bugs, or want to add new features, feel free to submit a pull request.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-terraform force-unlock daa647b6-f613-09c6-cd63-dc3476a10e4c
